@@ -1,5 +1,5 @@
 # IMT 350 - Robotics 2017 - rmeo
-##Team Members
+## Team Members
 * Arrieta
 * Soliz
 
