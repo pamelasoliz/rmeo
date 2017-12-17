@@ -1,0 +1,8 @@
+prefix=/home/pamis/mybot_ws-master/devel
+
+Name: mybot_codigo
+Description: Description of mybot_codigo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pamis/mybot_ws-master/devel/lib 
+Requires: 

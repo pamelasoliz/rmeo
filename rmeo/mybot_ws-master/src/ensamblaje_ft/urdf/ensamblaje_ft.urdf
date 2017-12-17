@@ -1,0 +1,202 @@
+<robot
+  name="ensamblaje_ft">
+  <link
+    name="carrito_base_link">
+    <inertial>
+      <origin
+        xyz="-0.031173 -0.0023148 0.15"
+        rpy="0 0 0" />
+      <mass
+        value="0.126" />
+      <inertia
+        ixx="0.00015146"
+        ixy="-3.7058E-22"
+        ixz="1.8014E-21"
+        iyy="0.00061425"
+        iyz="-1.3634E-23"
+        izz="0.00046331" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ensamblaje_ft/meshes/carrito_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ensamblaje_ft/meshes/carrito_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="RD_Link">
+    <inertial>
+      <origin
+        xyz="0.02 -1.7347E-18 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.28353" />
+      <inertia
+        ixx="0.00031986"
+        ixy="-9.5561E-21"
+        ixz="7.3571E-21"
+        iyy="0.00019773"
+        iyz="3.3881E-21"
+        izz="0.00019773" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ensamblaje_ft/meshes/RD_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ensamblaje_ft/meshes/RD_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RD_Joint"
+    type="fixed">
+    <origin
+      xyz="-0.0904082043959852 -0.249999999999998 0.00175073499384196"
+      rpy="1.62413115644096 6.12303176911189E-17 1.5707963267949" />
+    <parent
+      link="carrito_base_link" />
+    <child
+      link="RD_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RI_Link">
+    <inertial>
+      <origin
+        xyz="0.02 -1.3878E-17 6.9389E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.28353" />
+      <inertia
+        ixx="0.00031986"
+        ixy="-2.1059E-20"
+        ixz="1.1244E-20"
+        iyy="0.00019773"
+        iyz="0"
+        izz="0.00019773" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ensamblaje_ft/meshes/RI_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ensamblaje_ft/meshes/RI_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RI_Joint"
+    type="fixed">
+    <origin
+      xyz="-0.0904200916318602 -0.0499999999999977 0.00190927635977744"
+      rpy="-2.54845610836166 -6.12303176911189E-17 -1.5707963267949" />
+    <parent
+      link="carrito_base_link" />
+    <child
+      link="RI_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RL_Link">
+    <inertial>
+      <origin
+        xyz="0.005 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.012566" />
+      <inertia
+        ixx="2.5133E-06"
+        ixy="-3.6384E-22"
+        ixz="1.5894E-22"
+        iyy="1.3614E-06"
+        iyz="1.5882E-22"
+        izz="1.3614E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ensamblaje_ft/meshes/RL_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ensamblaje_ft/meshes/RL_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RL_Joint"
+    type="fixed">
+    <origin
+      xyz="0.0632937705482057 -0.138369650808744 -0.0248147933918564"
+      rpy="-2.70610555616882 -6.12303176911189E-17 -1.5707963267949" />
+    <parent
+      link="carrito_base_link" />
+    <child
+      link="RL_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

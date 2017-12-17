@@ -1,0 +1,8 @@
+prefix=/home/pamis/mybot_ws-master/devel
+
+Name: ensamblaje_ft
+Description: Description of ensamblaje_ft
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/pamis/mybot_ws-master/devel/lib 
+Requires: 
